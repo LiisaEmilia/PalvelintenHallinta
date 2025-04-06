@@ -2242,8 +2242,8 @@ noodille testi1 komennolla vagrant.exe <span class=SpellE>ssh</span> testi1.
 Tässä kohtaa <span class=SpellE>master</span> noodilla piti vielä hyväksyä orja
 noodien avaimet komennolla <span class=SpellE>sudo</span> <span class=SpellE>salt</span>-key
 -A. Tämän jälkeen testasin <span class=SpellE>saltin</span> toimintaa vielä
-komennolla <span class=SpellE>sudo</span> <span class=SpellE>salt</span> * <span
-class=SpellE>cmd.run</span> <span class=SpellE>hostname</span>, joka tulostaa
+komennolla <span class=SpellE>sudo</span> <span class=SpellE>salt</span> '*' <span
+class=SpellE>cmd.run</span> '<span class=SpellE>hostname</span>', joka tulostaa
 host-nimen koneelta, jolla komento ajetaan, eli tässä tapauksessa komento
 ajettiin <span class=SpellE>salt:lla</span> orja koneella testi2. <o:p></o:p></span></b></p>
 
@@ -2262,11 +2262,11 @@ color:#7030A0'><o:p></o:p></span></b></p>
 <p class=MsoNormal><b><span style='font-family:"Arial",sans-serif;color:black;
 mso-themecolor:text1'>Toisena <span class=SpellE>salt</span> tilana edellisen <span
 class=SpellE>cmd</span> tilan lisäksi käytin <span class=SpellE>pkg</span>-tilaa
-komennolla <span class=SpellE>sudo</span> <span class=SpellE>salt</span> * <span
+komennolla <span class=SpellE>sudo</span> <span class=SpellE>salt</span> '*' <span
 class=SpellE><span class=GramE>state.single</span></span> <span class=SpellE>pkg.installed</span>
 tree, tämä komento asensi tree-sovelluksen testi2 koneelle, todensin asennuksen
 onnistumisen ajamalla <span class=SpellE>sudo</span> <span class=SpellE>salt</span>
-<span class=SpellE>cmd.run</span> tree /home/* komennon.<o:p></o:p></span></b></p>
+<span class=SpellE>cmd.run</span> 'tree /home/*' komennon.<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
 style='font-family:"Arial",sans-serif;color:#7030A0;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -2284,11 +2284,11 @@ color:#7030A0'><o:p></o:p></span></b></p>
 mso-themecolor:text1'>Lopuksi kokeilin vielä <span class=SpellE>salt</span>
 file- tilaa ja loin testi2 koneelle tyhjän testi-nimisen tiedoston polkuun
 /home/<span class=SpellE>vagrant</span>/, tämä onnistui komennolla <span
-class=SpellE>sudo</span> <span class=SpellE>salt</span> * <span class=SpellE><span
-class=GramE>file.touch</span></span> /home/<span class=SpellE>vagrant</span>/testi.
+class=SpellE>sudo</span> <span class=SpellE>salt</span> '*' <span class=SpellE><span
+class=GramE>file.touch</span></span> '/home/<span class=SpellE>vagrant</span>/testi'.
 Todensin tiedoston luonnin onnistumisen <span class=SpellE>salt:in</span>
 avulla ajamalla komennon <span class=SpellE>sudo</span> <span class=SpellE>salt</span>
-* <span class=SpellE>cmd.run</span> tree /home/* joka näyttää, että
+* <span class=SpellE>cmd.run</span> 'tree /home/*' joka näyttää, että
 edelliseen kuvaan verrattuna /home/<span class=SpellE>vagrant</span>/ polkuun
 on tullut tiedosto nimeltä testi.<o:p></o:p></span></b></p>
 
