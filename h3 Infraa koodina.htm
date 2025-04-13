@@ -1845,12 +1845,12 @@ edellisin viikon kahden palvelimen <span class=SpellE>vagrant</span>
 ympäristöä. Kirjauduin ensin <span class=SpellE>ssh:lla</span> palvelimelle
 testi1 ja loin hakemistot /<span class=SpellE>srv</span>/<span class=SpellE>salt</span>/
 ja /<span class=SpellE>srv</span>/<span class=SpellE>salt</span>/<span
-class=SpellE>hello</span>/ komennoilla <span class=SpellE>sudo</span> <span
-class=SpellE>mkdir</span> /<span class=SpellE>srv</span>/<span class=SpellE>salt</span>
-ja <span class=SpellE>sudo</span> <span class=SpellE>mkdir</span> /<span
-class=SpellE>srv</span>/<span class=SpellE>salt</span>/<span class=SpellE>hello</span>.
+class=SpellE>hello</span>/ komennoilla `<span class=SpellE>sudo</span> <span
+class=SpellE>mkdir</span> /<span class=SpellE>srv</span>/<span class=SpellE>salt</span>`
+ja `<span class=SpellE>sudo</span> <span class=SpellE>mkdir</span> /<span
+class=SpellE>srv</span>/<span class=SpellE>salt</span>/<span class=SpellE>hello</span>`.
 Tämän jälkeen loin vi-editoria käyttäen tiedoston <span class=SpellE>init.sls</span>
-edellä luotuun <span class=SpellE>hello</span> kansioon. (Karvinen 2014)</p>
+edellä luotuun `<span class=SpellE>hello</span>` kansioon. (Karvinen 2014)</p>
 
 <p class=MsoListParagraphCxSpMiddle><b style='mso-bidi-font-weight:normal'><span
 style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
@@ -1887,7 +1887,7 @@ tiedostoon, joka on <span class=SpellE>yaml</span> formaatissa, laitoin tiedosto
 joka halutaan lisätä /<span class=SpellE>tmp</span>/ kansioon, koko polku on /<span
 class=SpellE>tmp</span>/palvelintenhallinnantiedosto. Ja seuraavalla rivillä
 määritetään <span class=SpellE>saltin</span> tila, jota käytetään tiedoston luomiseen,
-tässä tapauksessa <span class=SpellE><span class=GramE>file.managed</span></span>.
+tässä tapauksessa `<span class=SpellE><span class=GramE>file.managed</span></span>`.
 (Karvinen 2014)</p>
 
 <p class=MsoListParagraphCxSpMiddle><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1900,10 +1900,10 @@ src="h3%20Infraa%20koodina_tiedostot/image004.png" v:shapes="Kuva_x0020_2"><![en
 <p class=MsoListParagraphCxSpMiddle><o:p>&nbsp;</o:p></p>
 
 <p class=MsoListParagraphCxSpMiddle>Seuraavaksi suoritin <span class=SpellE>salt:in</span>
-tilan lokaalisti komennolla <span class=SpellE>sudo</span> <span class=SpellE>salt-call</span>
-<span class=SpellE>local</span> <span class=SpellE><span class=GramE>state.apply</span></span>
-<span class=SpellE>hello</span>, tämä komento siis suorittaa tilan <span
-class=SpellE>hello</span> paikallisella palvelimella.</p>
+tilan lokaalisti komennolla `<span class=SpellE>sudo</span> <span class=SpellE>salt-call</span>
+`<span class=SpellE>local</span> <span class=SpellE><span class=GramE>state.apply</span></span>
+<span class=SpellE>hello</span>, tämä komento siis suorittaa tilan `<span
+class=SpellE>hello</span>` paikallisella palvelimella.</p>
 
 <p class=MsoListParagraphCxSpMiddle><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_3" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:481.5pt;
@@ -1916,9 +1916,9 @@ src="h3%20Infraa%20koodina_tiedostot/image006.png" v:shapes="Kuva_x0020_3"><![en
 
 <p class=MsoListParagraphCxSpMiddle>Salt komennon ajamisen jälkeen tarkastin,
 että tiedosto on syntynyt /<span class=SpellE>tmp</span>/ kansioon, ensin
-katsoin järjestelmän ajan <span class=SpellE>date</span> komennolla, jonka
-jälkeen listasin /<span class=SpellE>tmp</span>/ kansion sisällön <span
-class=SpellE>ls</span> -<span class=SpellE>al</span> /<span class=SpellE>tmp</span>/
+katsoin järjestelmän ajan `<span class=SpellE>date</span>` komennolla, jonka
+jälkeen listasin /<span class=SpellE>tmp</span>/ kansion sisällön `<span
+class=SpellE>ls</span> -<span class=SpellE>al</span> /<span class=SpellE>tmp</span>/`
 komennolla. Näin pystyin varmistamaan, että tiedosto on syntynyt juuri hetki
 sitten.</p>
 
@@ -1950,9 +1950,9 @@ tilan <span class=SpellE>init.sls</span> tiedoston verkon yli orjalle<o:p></o:p>
 
 <p class=MsoListParagraphCxSpMiddle>Tässä kohtaa ajoin <span class=SpellE>hello</span>
 <span class=SpellE>init.sls</span> tiedoston verkon yli orja palvelimelle
-testi2, tämä onnistui komennolla <span class=SpellE>sudo</span> <span
-class=SpellE>salt</span> * <span class=SpellE><span class=GramE>state.apply</span></span>
-<span class=SpellE>hello</span> (Karvinen 2014)</p>
+testi2, tämä onnistui komennolla `<span class=SpellE>sudo</span> <span
+class=SpellE>salt</span> '*' <span class=SpellE><span class=GramE>state.apply</span></span>
+<span class=SpellE>hello</span>` (Karvinen 2014)</p>
 
 <p class=MsoListParagraphCxSpMiddle><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_6" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:474.5pt;
@@ -1965,9 +1965,9 @@ src="h3%20Infraa%20koodina_tiedostot/image012.png" v:shapes="Kuva_x0020_6"><![en
 
 <p class=MsoListParagraphCxSpMiddle>Tämän jälkeen kirjauduin <span
 class=SpellE>ssh:lla</span> palvelimelle testi2 ja kävin varmistamassa, että
-pyydetty tiedosto palvelintenhallinnantiedosto on ilmestynyt kansioon /<span
-class=SpellE>tmp</span>/, tämän varmistin komennolla <span class=SpellE>ls</span>
--<span class=SpellE>al</span> /<span class=SpellE>tmp</span>, jonka ajoin
+pyydetty tiedosto `palvelintenhallinnantiedosto` on ilmestynyt kansioon /<span
+class=SpellE>tmp</span>/, tämän varmistin komennolla `<span class=SpellE>ls</span>
+-<span class=SpellE>al</span> /<span class=SpellE>tmp</span>`, jonka ajoin
 palvelimella testi2.</p>
 
 <p class=MsoListParagraphCxSpLast><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1984,12 +1984,12 @@ style='mso-bidi-font-family:Aptos;mso-bidi-theme-font:minor-latin'><span
 style='mso-list:Ignore'>c)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span></b><![endif]><span class=SpellE><b>Idempotentti</b></span><b>
 <span class=SpellE>sls</span>-tiedosto, jossa käytetään <span class=SpellE>vähintää</span>
-kahta ei <span class=SpellE>salt</span> tilaa<o:p></o:p></b></p>
+kahta eri <span class=SpellE>salt</span> tilaa<o:p></o:p></b></p>
 
 <p class=MsoListParagraphCxSpMiddle>Tässä tehtävässä tein <span class=SpellE>master</span>
-palvelimelle testi1 uuden hakemiston /<span class=SpellE>srv</span>/<span
-class=SpellE>salt</span>/<span class=SpellE>paasiaispupu</span>, joka edustaa
-uutta <span class=SpellE>salt</span> tilaa nimeltä <span class=SpellE>paasiaispupu</span>.
+palvelimelle testi1 uuden hakemiston `/<span class=SpellE>srv</span>/<span
+class=SpellE>salt</span>/<span class=SpellE>paasiaispupu</span>`, joka edustaa
+uutta <span class=SpellE>salt</span> tilaa nimeltä `<span class=SpellE>paasiaispupu</span>`.
 Tänne luotuun kansioon loin uuden <span class=SpellE>init.sls</span> tiedoston
 vi editorilla.<span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Kuva_x0020_8"
  o:spid="_x0000_i1029" type="#_x0000_t75" style='width:408.5pt;height:88.5pt;
@@ -2008,7 +2008,7 @@ auto;text-indent:-18.0pt;mso-list:l0 level1 lfo2'><![if !supportLists]><span
 style='mso-ascii-font-family:Aptos;mso-fareast-font-family:Aptos;mso-hansi-font-family:
 Aptos;mso-bidi-font-family:Aptos'><span style='mso-list:Ignore'>-<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>uusi tiedosto paasiaispupu.info hakemistoon /<span
+</span></span></span><![endif]>uusi tiedosto `paasiaispupu.info` hakemistoon /<span
 class=SpellE>tmp</span>/</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;mso-add-space:
@@ -2016,15 +2016,15 @@ auto;text-indent:-18.0pt;mso-list:l0 level1 lfo2'><![if !supportLists]><span
 style='mso-ascii-font-family:Aptos;mso-fareast-font-family:Aptos;mso-hansi-font-family:
 Aptos;mso-bidi-font-family:Aptos'><span style='mso-list:Ignore'>-<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>paketin tree asentaminen</p>
+</span></span></span><![endif]>paketin `tree` asentaminen</p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:54.0pt;mso-add-space:auto;
 text-indent:-18.0pt;mso-list:l0 level1 lfo2'><![if !supportLists]><span
 style='mso-ascii-font-family:Aptos;mso-fareast-font-family:Aptos;mso-hansi-font-family:
 Aptos;mso-bidi-font-family:Aptos'><span style='mso-list:Ignore'>-<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>käyttäjän <span class=SpellE>paasiaispupu</span>
-luominen (Karvinen 2014)</p>
+</span></span></span><![endif]>käyttäjän `<span class=SpellE>paasiaispupu</span>`
+luominen (Karvinen 2014)</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_1" o:spid="_x0000_i1028" type="#_x0000_t75" alt="Kuva, joka sisältää kohteen teksti, kuvakaappaus, Fontti&#10;&#10;Tekoälyn generoima sisältö voi olla virheellistä."
@@ -2035,10 +2035,10 @@ src="h3%20Infraa%20koodina_tiedostot/image018.png"
 alt="Kuva, joka sisältää kohteen teksti, kuvakaappaus, Fontti&#10;&#10;Tekoälyn generoima sisältö voi olla virheellistä."
 v:shapes="Kuva_x0020_1"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen ajoin uuden <span
-class=SpellE>paasiaispupu</span>-tilan verkon yli orja palvelimelle testi2 komennolla
-<span class=SpellE>sudo</span> <span class=SpellE>salt</span> * <span
-class=SpellE><span class=GramE>state.apply</span></span> <span class=SpellE>paasiaispupu</span>.</p>
+<p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen ajoin uuden `<span
+class=SpellE>paasiaispupu</span>`-tilan verkon yli orja palvelimelle testi2 komennolla
+`<span class=SpellE>sudo</span> <span class=SpellE>salt</span> '*' <span
+class=SpellE><span class=GramE>state.apply</span></span> <span class=SpellE>paasiaispupu</span>`.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_9" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:375.5pt;
@@ -2050,14 +2050,14 @@ src="h3%20Infraa%20koodina_tiedostot/image020.png" v:shapes="Kuva_x0020_9"><![en
 <p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen kirjauduin
 testi2-palvelimelle <span class=SpellE>ssh:lla</span> ja testasin että <span
 class=SpellE>init.sls</span> tiedostossa <span class=SpellE>määritelly</span>
-asiat ovat ilmestyneet palvelimelle testi2. paasiaispupu.info-tiedoston luomisen
-testi2-palvelimelle todensin ajamalla komennon <span class=SpellE>ls</span> -<span
+asiat ovat  palvelimelle testi2. ilmestyneet `paasiaispupu.info`-tiedoston luomisen
+testi2-palvelimelle todensin ajamalla komennon `<span class=SpellE>ls</span> -<span
 class=SpellE>al</span> /<span class=SpellE>tmp</span>/ | <span class=SpellE>grep</span>
-pupu testi2-palvelimella. <span class=SpellE>paasiaispupu</span>-käyttäjän olemassaolon
-varmistin komennolla <span class=SpellE>grep</span> pupu /<span class=SpellE>etc</span>/<span
-class=SpellE>passwd</span> testi2-palvelimella. Ja varmistin vielä että tree
+pupu` testi2-palvelimella. `<span class=SpellE>paasiaispupu</span>`-käyttäjän olemassaolon
+varmistin komennolla `<span class=SpellE>grep</span> pupu /<span class=SpellE>etc</span>/<span
+class=SpellE>passwd</span>` testi2-palvelimella. Ja varmistin vielä että `tree`
 komento/ohjelma löytyy <span class=SpellE>pavelimelta</span> testi2 ajamalla
-komennon tree -L 2 /home/, joka onnistui ja näin todensi paketin tree
+komennon `tree -L 2 /home/`, joka onnistui ja näin todensi paketin tree`
 asentumisen. (Karvinen 2014)</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -2069,10 +2069,10 @@ src="h3%20Infraa%20koodina_tiedostot/image022.png" v:shapes="Kuva_x0020_10"><![e
 
 <p class=MsoNormal style='margin-left:36.0pt'>Lopuksi todensin <span
 class=SpellE>paasiaispupu</span> tilan <span class=SpellE>init.sls</span>
-konfiguraation <span class=SpellE>idempotenttiuden</span> ajamalla komennon
+konfiguraation <span class=SpellE>idempotenttiuden</span> ajamalla salt komennon `paasiaispupu´-tilalle
 muutaman kerran uudelleen eikä komento tehnyt mitään muutoksia kohde
 palvelimelle. (Karvinen 2014)</p>
-
+ 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_12" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:396pt;
  height:521pt;visibility:visible;mso-wrap-style:square'>
