@@ -5,7 +5,7 @@ xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
@@ -20,9 +20,9 @@ w\:* {behavior:url(#default#VML);}
 </style>
 <![endif]--><!--[if gte mso 9]><xml>
  <o:DocumentProperties>
-  <o:Author>Ristimäki Liisa</o:Author>
+  <o:Author>RistimÃ¤ki Liisa</o:Author>
   <o:Template>Normal</o:Template>
-  <o:LastAuthor>Ristimäki Liisa</o:LastAuthor>
+  <o:LastAuthor>RistimÃ¤ki Liisa</o:LastAuthor>
   <o:Revision>2</o:Revision>
   <o:TotalTime>409</o:TotalTime>
   <o:Created>2025-04-20T17:50:00Z</o:Created>
@@ -1675,49 +1675,49 @@ style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#504F40;mso-font-kerning:0pt;mso-ligatures:none;
 mso-fareast-language:FI'>h4 <span class=SpellE>Pkg</span>-file-service<o:p></o:p></span></b></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'><b>x) Lue ja tiivistä</b>. Artikkelin
-sisältö tiivistettynä:<o:p></o:p></p>
+<p class=MsoNormal style='margin-left:36.0pt'><b>x) Lue ja tiivistÃ¤</b>. Artikkelin
+sisÃ¤ltÃ¶ tiivistettynÃ¤:<o:p></o:p></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Konfiguraation hallinta</p>
 
 <ul style='margin-top:0cm' type=disc>
  <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'><span
      class=SpellE>Package</span>-file-service -malli tarjoaa tavan hallita ja
-     konfiguroida demoneja keskitetysti. Prosessi sisältää ohjelmiston
-     asentamisen, määritystiedoston muokkaamisen ja demonin käynnistämisen
+     konfiguroida demoneja keskitetysti. Prosessi sisÃ¤ltÃ¤Ã¤ ohjelmiston
+     asentamisen, mÃ¤Ã¤ritystiedoston muokkaamisen ja demonin kÃ¤ynnistÃ¤misen
      uudelleen.<o:p></o:p></li>
  <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>Artikkelissa
-     kerrotaan, miten Saltilla vaihdetaan SSH-palvelimen portti. Tämä tehdään
+     kerrotaan, miten Saltilla vaihdetaan SSH-palvelimen portti. TÃ¤mÃ¤ tehdÃ¤Ã¤n
      luomalla Salt-tila (`<span class=SpellE>sshd.sls</span>`) ja hallinnoitu
-     määritystiedosto (`<span class=SpellE>sshd_config</span>`).<o:p></o:p></li>
- <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>Määritykset
-     eli SSH-portin numero muutettiin oletusarvoisesti 22:sta 8888:een, ja myös
-     muita asetuksia konfiguroitiin turvallisuuden ja käytettävyyden
+     mÃ¤Ã¤ritystiedosto (`<span class=SpellE>sshd_config</span>`).<o:p></o:p></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>MÃ¤Ã¤ritykset
+     eli SSH-portin numero muutettiin oletusarvoisesti 22:sta 8888:een, ja myÃ¶s
+     muita asetuksia konfiguroitiin turvallisuuden ja kÃ¤ytettÃ¤vyyden
      optimoimiseksi.<o:p></o:p></li>
  <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>Soveltaminen
      orjakoneisiin eli `<span class=SpellE>sudo</span> <span class=SpellE>salt</span>
      '*' <span class=SpellE><span class=GramE>state.apply</span></span> <span
-     class=SpellE>sshd</span>` -komennolla voidaan ottaa muutokset käyttöön.
-     Testaamalla yhteyttä osoitteeseen voidaan varmistaa demonin toimivuus
+     class=SpellE>sshd</span>` -komennolla voidaan ottaa muutokset kÃ¤yttÃ¶Ã¶n.
+     Testaamalla yhteyttÃ¤ osoitteeseen voidaan varmistaa demonin toimivuus
      uudella portilla.<o:p></o:p></li>
- <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>Pääpaino
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>PÃ¤Ã¤paino
      on demonien keskitetty hallinta ja automatisointi
-     konfiguraationhallintatyökalujen avulla. Näin operointi on tehokasta ja
-     virheet vähenevät. (Karvinen 2018)<o:p></o:p></li>
+     konfiguraationhallintatyÃ¶kalujen avulla. NÃ¤in operointi on tehokasta ja
+     virheet vÃ¤henevÃ¤t. (Karvinen 2018)<o:p></o:p></li>
 </ul>
 
 <p class=MsoNormal style='margin-left:36.0pt'><b>a) Apache <span class=SpellE>easy</span>
 mode</b>. </p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Käytin tässä pohjana 2 tehtävän
-kahden koneen <span class=SpellE>vagrant</span> ympäristöä, jossa <span
+<p class=MsoNormal style='margin-left:36.0pt'>KÃ¤ytin tÃ¤ssÃ¤ pohjana 2 tehtÃ¤vÃ¤n
+kahden koneen <span class=SpellE>vagrant</span> ympÃ¤ristÃ¶Ã¤, jossa <span
 class=SpellE>salt</span> on valmiiksi asennettuna <span class=SpellE>vagrant</span>
-skripteillä. (Ristimäki 2025) </p>
+skripteillÃ¤. (RistimÃ¤ki 2025) </p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Ensin varmistin, ettei koneella
-ole valmiiksi asennettua apache2:sta, tämän tein komennoilla ´<span
-class=SpellE>systemctl</span> status <span class=SpellE>httpd</span>´ ja ´<span
-class=SpellE>systemctl</span> status apache2´.</p>
+ole valmiiksi asennettua apache2:sta, tÃ¤mÃ¤n tein komennoilla Â´<span
+class=SpellE>systemctl</span> status <span class=SpellE>httpd</span>Â´ ja Â´<span
+class=SpellE>systemctl</span> status apache2Â´.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
  id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
@@ -1745,11 +1745,11 @@ class=SpellE>systemctl</span> status apache2´.</p>
 </v:shape><![endif]--><![if !vml]><img width=643 height=205
 src="h4_pkg_file_service_tiedostot/image002.png" v:shapes="_x0000_i1044"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen asensin apache2:n
-testi1-koneelle komennolla ´<span class=SpellE>sudo</span> <span class=SpellE>apt-get</span>
-<span class=SpellE>install</span> apache2´ ja varmistin että <span
-class=SpellE>apache</span>-palvelu on käynnissä komennolla ´<span class=SpellE>sudo</span>
-<span class=SpellE>systemctl</span> status apache2´.</p>
+<p class=MsoNormal style='margin-left:36.0pt'>TÃ¤mÃ¤n jÃ¤lkeen asensin apache2:n
+testi1-koneelle komennolla Â´<span class=SpellE>sudo</span> <span class=SpellE>apt-get</span>
+<span class=SpellE>install</span> apache2Â´ ja varmistin ettÃ¤ <span
+class=SpellE>apache</span>-palvelu on kÃ¤ynnissÃ¤ komennolla Â´<span class=SpellE>sudo</span>
+<span class=SpellE>systemctl</span> status apache2Â´.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_2" o:spid="_x0000_i1043" type="#_x0000_t75" style='width:481.5pt;
@@ -1767,9 +1767,9 @@ src="h4_pkg_file_service_tiedostot/image006.png" v:shapes="Kuva_x0020_3"><![endi
 
 <p class=MsoNormal style='margin-left:36.0pt'>Koneella testi1 ei ollut <span
 class=SpellE>curl</span>-ohjelmaa asennettuna, joten asensin <span
-class=SpellE>curl:in</span> komennolla ´<span class=SpellE>sudo</span> <span
+class=SpellE>curl:in</span> komennolla Â´<span class=SpellE>sudo</span> <span
 class=SpellE>apt-get</span> <span class=SpellE>install</span> <span
-class=SpellE>curl</span>´. <span class=SpellE>Curl</span> on erittäin näppärä
+class=SpellE>curl</span>Â´. <span class=SpellE>Curl</span> on erittÃ¤in nÃ¤ppÃ¤rÃ¤
 ohjelma apache2:n ja muiden web-palvelinten testaamiseen.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1779,14 +1779,14 @@ ohjelma apache2:n ja muiden web-palvelinten testaamiseen.</p>
 </v:shape><![endif]--><![if !vml]><img width=642 height=243
 src="h4_pkg_file_service_tiedostot/image008.png" v:shapes="Kuva_x0020_4"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen muokkasin apache2:n
-testisivua seuraavalla komennolla ´<span class=SpellE>echo</span> ”<span
+<p class=MsoNormal style='margin-left:36.0pt'>TÃ¤mÃ¤n jÃ¤lkeen muokkasin apache2:n
+testisivua seuraavalla komennolla Â´<span class=SpellE>echo</span> Â”<span
 class=SpellE>Heeyy</span>! <span lang=EN-GB style='mso-ansi-language:EN-GB'>Apache
-up &amp; running!” </span>| <span class=SpellE>sudo</span> tee /<span
-class=SpellE>var</span>/www/html/index.html´. Tämän jälkeen <span class=SpellE><span
-class=GramE>testasin,että</span></span> sivu palauttaa muokkaamani tekstin
-komennolla ´<span class=SpellE>curl</span> <span class=SpellE>localhost</span>
-80´.</p>
+up &amp; running!Â” </span>| <span class=SpellE>sudo</span> tee /<span
+class=SpellE>var</span>/www/html/index.htmlÂ´. TÃ¤mÃ¤n jÃ¤lkeen <span class=SpellE><span
+class=GramE>testasin,ettÃ¤</span></span> sivu palauttaa muokkaamani tekstin
+komennolla Â´<span class=SpellE>curl</span> <span class=SpellE>localhost</span>
+80Â´.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_5" o:spid="_x0000_i1040" type="#_x0000_t75" style='width:481.5pt;
@@ -1795,18 +1795,18 @@ komennolla ´<span class=SpellE>curl</span> <span class=SpellE>localhost</span>
 </v:shape><![endif]--><![if !vml]><img width=642 height=76
 src="h4_pkg_file_service_tiedostot/image010.png" v:shapes="Kuva_x0020_5"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Nyt kun käsin tehty apache2
-asennus toimii, niin aloitin tekemään <span class=SpellE>salt</span>-tiedostoja
+<p class=MsoNormal style='margin-left:36.0pt'>Nyt kun kÃ¤sin tehty apache2
+asennus toimii, niin aloitin tekemÃ¤Ã¤n <span class=SpellE>salt</span>-tiedostoja
 asennuksen automatisoimiseksi. Ensin loin hakemiston /<span class=SpellE>srv</span>/<span
-class=SpellE>salt</span>/apache2, komennolla ´<span class=SpellE>sudo</span> <span
-class=SpellE>mkdir</span> /<span class=SpellE>srv</span>/<span class=SpellE>salt</span>/apache2´,
+class=SpellE>salt</span>/apache2, komennolla Â´<span class=SpellE>sudo</span> <span
+class=SpellE>mkdir</span> /<span class=SpellE>srv</span>/<span class=SpellE>salt</span>/apache2Â´,
 jonka alle apache2 asennuksen tiedostot tulevat. Apache2:n <span class=SpellE>init.sls</span>
-tiedoston tein komennolla ´<span class=SpellE>sudo</span> vi /<span
+tiedoston tein komennolla Â´<span class=SpellE>sudo</span> vi /<span
 class=SpellE>srv</span>/<span class=SpellE>salt</span>/apache2/<span
-class=SpellE>init.sls</span>´, ja index.html tiedoston komennolla ´<span
-class=SpellE>echo</span> ”<span class=SpellE>Jippikayee</span>! <span
-lang=EN-GB style='mso-ansi-language:EN-GB'>Apache2 running on salt slave!” | <span
-class=SpellE>sudo</span> tee /<span class=SpellE>srv</span>/salt/apache2/index.html´.<o:p></o:p></span></p>
+class=SpellE>init.sls</span>Â´, ja index.html tiedoston komennolla Â´<span
+class=SpellE>echo</span> Â”<span class=SpellE>Jippikayee</span>! <span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Apache2 running on salt slave!Â” | <span
+class=SpellE>sudo</span> tee /<span class=SpellE>srv</span>/salt/apache2/index.htmlÂ´.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-GB
 style='mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1818,8 +1818,8 @@ src="h4_pkg_file_service_tiedostot/image012.png" v:shapes="Kuva_x0020_6"><![endi
 lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>apache2:n <span class=SpellE>init.sls</span>
-tiedoston sisältö, laitoin <span class=SpellE>curl:n</span> asentumaan apache2:n
-ohessa, mikäli tarvitsee testailla paikallisesti:</p>
+tiedoston sisÃ¤ltÃ¶, laitoin <span class=SpellE>curl:n</span> asentumaan apache2:n
+ohessa, mikÃ¤li tarvitsee testailla paikallisesti:</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-GB
 style='mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1830,8 +1830,8 @@ style='mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
 src="h4_pkg_file_service_tiedostot/image014.png" v:shapes="Kuva_x0020_7"><![endif]></span><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tässä välissä kävin testi2-koneella
-varmistamassa, että apache2 ei ole asennettuna ja varmistamassa koneen
+<p class=MsoNormal style='margin-left:36.0pt'>TÃ¤ssÃ¤ vÃ¤lissÃ¤ kÃ¤vin testi2-koneella
+varmistamassa, ettÃ¤ apache2 ei ole asennettuna ja varmistamassa koneen
 IP-osoitteen tulevaa testaamista varten.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1842,10 +1842,10 @@ IP-osoitteen tulevaa testaamista varten.</p>
 src="h4_pkg_file_service_tiedostot/image016.png" v:shapes="Kuva_x0020_8"><![endif]></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Nyt kun <span class=SpellE>salt</span>
-konfiguraatio tiedostot ovat <span class=SpellE>kunnosa</span>, eikä apache2
-ollut asennettuna testi2-koneelle ajoin apache2 tilan orjakoneelle komennolla ´<span
-class=SpellE>sudo</span> <span class=SpellE>salt</span> ´*´ <span class=SpellE><span
-class=GramE>state.apply</span></span> apache2´.</p>
+konfiguraatio tiedostot ovat <span class=SpellE>kunnosa</span>, eikÃ¤ apache2
+ollut asennettuna testi2-koneelle ajoin apache2 tilan orjakoneelle komennolla Â´<span
+class=SpellE>sudo</span> <span class=SpellE>salt</span> Â´*Â´ <span class=SpellE><span
+class=GramE>state.apply</span></span> apache2Â´.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_9" o:spid="_x0000_i1036" type="#_x0000_t75" style='width:336pt;
@@ -1855,12 +1855,12 @@ class=GramE>state.apply</span></span> apache2´.</p>
 src="h4_pkg_file_service_tiedostot/image018.png" v:shapes="Kuva_x0020_9"><![endif]></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Lopuksi testasin apache2:n
-asennuksen orjakoneelle testi2. Ensin testasin komennolla ´<span class=SpellE>curl</span>
-192.168.88.102 80´ että <span class=SpellE>apache</span> vastaa uudelle testisivullani.
-Tämän jälkeen katsoin vielä komennolla ´<span class=SpellE>sudo</span> <span
-class=SpellE>salt</span> ´*´ <span class=SpellE>cmd.run</span> ’<span
-class=SpellE>sudo</span> <span class=SpellE>systemctl</span> status apache2´
-että apache2 palvelu on asentunut ja käynnissä.</p>
+asennuksen orjakoneelle testi2. Ensin testasin komennolla Â´<span class=SpellE>curl</span>
+192.168.88.102 80Â´ ettÃ¤ <span class=SpellE>apache</span> vastaa uudelle testisivullani.
+TÃ¤mÃ¤n jÃ¤lkeen katsoin vielÃ¤ komennolla Â´<span class=SpellE>sudo</span> <span
+class=SpellE>salt</span> Â´*Â´ <span class=SpellE>cmd.run</span> Â’<span
+class=SpellE>sudo</span> <span class=SpellE>systemctl</span> status apache2Â´
+ettÃ¤ apache2 palvelu on asentunut ja kÃ¤ynnissÃ¤.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_10" o:spid="_x0000_i1035" type="#_x0000_t75" style='width:481.5pt;
@@ -1873,19 +1873,19 @@ src="h4_pkg_file_service_tiedostot/image020.png" v:shapes="Kuva_x0020_10"><![end
 
 <ul style='margin-top:0cm' type=disc>
  <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list 36.0pt'>b) <span
-     class=SpellE>SSHouto</span>. Lisää uusi portti, jossa <span class=SpellE>SSHd</span>
+     class=SpellE>SSHouto</span>. LisÃ¤Ã¤ uusi portti, jossa <span class=SpellE>SSHd</span>
      kuuntelee.</li>
 </ul>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Jatkoin edellisen kohdan virtuaalikoneilla
 <span class=SpellE>SSHd:n</span> <span class=SpellE>kjonfigurointia</span>. <span
 class=SpellE>sshd</span> ohjelma oli jo valmiiksi asennettuna koneelle <span
-class=SpellE>debianin</span> asennuksen yhteydessä. Ensin testasin testi1-koneella,
-että <span class=SpellE>ssh</span> portti <span class=SpellE>tcp</span>/22 on
+class=SpellE>debianin</span> asennuksen yhteydessÃ¤. Ensin testasin testi1-koneella,
+ettÃ¤ <span class=SpellE>ssh</span> portti <span class=SpellE>tcp</span>/22 on
 auki ja portti <span class=SpellE>tcp</span>/8022 ei ole. Tein testauksen
-komennoilla ´<span class=SpellE>nc</span> -z -v <span class=SpellE>localhost</span>
-22´ ja ´<span class=SpellE>nc</span> -z -v <span class=SpellE>localhost</span>
-8022´.</p>
+komennoilla Â´<span class=SpellE>nc</span> -z -v <span class=SpellE>localhost</span>
+22Â´ ja Â´<span class=SpellE>nc</span> -z -v <span class=SpellE>localhost</span>
+8022Â´.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_11" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:372.5pt;
@@ -1894,14 +1894,14 @@ komennoilla ´<span class=SpellE>nc</span> -z -v <span class=SpellE>localhost</sp
 </v:shape><![endif]--><![if !vml]><img width=497 height=101
 src="h4_pkg_file_service_tiedostot/image022.png" v:shapes="Kuva_x0020_11"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen muokkasin
-vi-editorilla <span class=SpellE>sshd:n</span> konfiguraatiota lisäämällä
-portin <span class=SpellE>tcp</span>/8022. Uudelleen käynnistin <span
+<p class=MsoNormal style='margin-left:36.0pt'>TÃ¤mÃ¤n jÃ¤lkeen muokkasin
+vi-editorilla <span class=SpellE>sshd:n</span> konfiguraatiota lisÃ¤Ã¤mÃ¤llÃ¤
+portin <span class=SpellE>tcp</span>/8022. Uudelleen kÃ¤ynnistin <span
 class=SpellE>sshd</span>-prosessin ja testasin <span class=SpellE>nc</span>-komennolla,
-että portti <span class=SpellE>tcp</span>/22 on edelleen kuulolla ja myös portti
+ettÃ¤ portti <span class=SpellE>tcp</span>/22 on edelleen kuulolla ja myÃ¶s portti
 <span class=SpellE>tcp</span>/8022 on kuulolla. <span lang=EN-GB
-style='mso-ansi-language:EN-GB'>´<span class=SpellE>nc</span> -z -v localhost
-22´ ja ´<span class=SpellE>nc</span> -z -v localhost 8022´.<o:p></o:p></span></p>
+style='mso-ansi-language:EN-GB'>Â´<span class=SpellE>nc</span> -z -v localhost
+22Â´ ja Â´<span class=SpellE>nc</span> -z -v localhost 8022Â´.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_12" o:spid="_x0000_i1033" type="#_x0000_t75" style='width:481.5pt;
@@ -1916,11 +1916,11 @@ src="h4_pkg_file_service_tiedostot/image024.png" v:shapes="Kuva_x0020_12"><![end
 src="h4_pkg_file_service_tiedostot/image026.png" v:shapes="Kuva_x0020_13"><![endif]></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Seuraavaksi tein uuden hakemiston
-<span class=SpellE>salt</span>-tilaa varten, ´<span class=SpellE>sudo</span> <span
+<span class=SpellE>salt</span>-tilaa varten, Â´<span class=SpellE>sudo</span> <span
 class=SpellE>mkdir</span> /<span class=SpellE>srv</span>/<span class=SpellE>salt</span>/<span
-class=SpellE>sshd</span>´. Tämän jälkeen kopioin <span class=SpellE>sshd</span>-konfiguraatio
-tiedoston tähän hakemistoon ja loin <span class=SpellE>init.sls</span>
-tiedoston vi-editoria käyttäen. (Karvinen 2018)</p>
+class=SpellE>sshd</span>Â´. TÃ¤mÃ¤n jÃ¤lkeen kopioin <span class=SpellE>sshd</span>-konfiguraatio
+tiedoston tÃ¤hÃ¤n hakemistoon ja loin <span class=SpellE>init.sls</span>
+tiedoston vi-editoria kÃ¤yttÃ¤en. (Karvinen 2018)</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_14" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:408.5pt;
@@ -1930,16 +1930,16 @@ tiedoston vi-editoria käyttäen. (Karvinen 2018)</p>
 src="h4_pkg_file_service_tiedostot/image028.png" v:shapes="Kuva_x0020_14"><![endif]></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Kuva_x0020_1" o:spid="_x0000_i1030" type="#_x0000_t75" alt="Kuva, joka sisältää kohteen teksti, kuvakaappaus, Fontti&#10;&#10;Tekoälyn generoima sisältö voi olla virheellistä."
+ id="Kuva_x0020_1" o:spid="_x0000_i1030" type="#_x0000_t75" alt="Kuva, joka sisÃ¤ltÃ¤Ã¤ kohteen teksti, kuvakaappaus, Fontti&#10;&#10;TekoÃ¤lyn generoima sisÃ¤ltÃ¶ voi olla virheellistÃ¤."
  style='width:303.5pt;height:150pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="h4_pkg_file_service_tiedostot/image029.png" o:title="Kuva, joka sisältää kohteen teksti, kuvakaappaus, Fontti&#10;&#10;Tekoälyn generoima sisältö voi olla virheellistä"/>
+ <v:imagedata src="h4_pkg_file_service_tiedostot/image029.png" o:title="Kuva, joka sisÃ¤ltÃ¤Ã¤ kohteen teksti, kuvakaappaus, Fontti&#10;&#10;TekoÃ¤lyn generoima sisÃ¤ltÃ¶ voi olla virheellistÃ¤"/>
 </v:shape><![endif]--><![if !vml]><img width=405 height=200
 src="h4_pkg_file_service_tiedostot/image030.png"
-alt="Kuva, joka sisältää kohteen teksti, kuvakaappaus, Fontti&#10;&#10;Tekoälyn generoima sisältö voi olla virheellistä."
+alt="Kuva, joka sisÃ¤ltÃ¤Ã¤ kohteen teksti, kuvakaappaus, Fontti&#10;&#10;TekoÃ¤lyn generoima sisÃ¤ltÃ¶ voi olla virheellistÃ¤."
 v:shapes="Kuva_x0020_1"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen siivosin
-vi-editoria käyttäen kommentoidut rivit <span class=SpellE>sshd_config</span>
+<p class=MsoNormal style='margin-left:36.0pt'>TÃ¤mÃ¤n jÃ¤lkeen siivosin
+vi-editoria kÃ¤yttÃ¤en kommentoidut rivit <span class=SpellE>sshd_config</span>
 tiedostosta.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -1949,11 +1949,11 @@ tiedostosta.</p>
 </v:shape><![endif]--><![if !vml]><img width=563 height=477
 src="h4_pkg_file_service_tiedostot/image032.png" v:shapes="Kuva_x0020_15"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tämän testasin, että <span
+<p class=MsoNormal style='margin-left:36.0pt'>TÃ¤mÃ¤n testasin, ettÃ¤ <span
 class=SpellE>sshd</span> ei kuuntele porttia <span class=SpellE>tcp</span>/8022
-koneella testi2 (192.168.88.102). Toteutin testauksen komennoilla ´<span
-class=SpellE>nc</span> -z -v 192.168.88.102 8022´ ja ´<span class=SpellE>ssh</span>
--p 8022 192.168.88.102´</p>
+koneella testi2 (192.168.88.102). Toteutin testauksen komennoilla Â´<span
+class=SpellE>nc</span> -z -v 192.168.88.102 8022Â´ ja Â´<span class=SpellE>ssh</span>
+-p 8022 192.168.88.102Â´</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Kuva_x0020_16" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:481.5pt;
@@ -1962,10 +1962,10 @@ class=SpellE>nc</span> -z -v 192.168.88.102 8022´ ja ´<span class=SpellE>ssh</sp
 </v:shape><![endif]--><![if !vml]><img width=642 height=257
 src="h4_pkg_file_service_tiedostot/image034.png" v:shapes="Kuva_x0020_16"><![endif]></span></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen ajoin <span
+<p class=MsoNormal style='margin-left:36.0pt'>TÃ¤mÃ¤n jÃ¤lkeen ajoin <span
 class=SpellE>salt</span> tilan <span class=SpellE>sshd</span> orjakoneelle
-komennolla ´<span class=SpellE>sudo</span> <span class=SpellE>salt</span> ´*´ <span
-class=SpellE><span class=GramE>state.apply</span></span> <span class=SpellE>sshd</span>´.</p>
+komennolla Â´<span class=SpellE>sudo</span> <span class=SpellE>salt</span> Â´*Â´ <span
+class=SpellE><span class=GramE>state.apply</span></span> <span class=SpellE>sshd</span>Â´.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><o:p>&nbsp;</o:p></p>
 
@@ -1984,11 +1984,11 @@ src="h4_pkg_file_service_tiedostot/image036.png" v:shapes="Kuva_x0020_17"><![end
 src="h4_pkg_file_service_tiedostot/image038.png" v:shapes="Kuva_x0020_19"><![endif]></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Lopuksi testasin portin <span
-class=SpellE>tcp</span>/8022 päällä olon testi2-koneella (192.168.88.102)
-komennoilla ´<span class=SpellE>nc</span> -z -v 192.168.88.102´ ja ´<span
-class=SpellE>ssh</span> -p 8022 192.168.88.102´. Vertailun vuoksi ajoin samat komennot
+class=SpellE>tcp</span>/8022 pÃ¤Ã¤llÃ¤ olon testi2-koneella (192.168.88.102)
+komennoilla Â´<span class=SpellE>nc</span> -z -v 192.168.88.102Â´ ja Â´<span
+class=SpellE>ssh</span> -p 8022 192.168.88.102Â´. Vertailun vuoksi ajoin samat komennot
 portille <span class=SpellE>tcp</span>/22 ja vaste molemmille porteille oli
-sama, joten tästä pystyin päättelemään, että <span class=SpellE>sshd</span>
+sama, joten tÃ¤stÃ¤ pystyin pÃ¤Ã¤ttelemÃ¤Ã¤n, ettÃ¤ <span class=SpellE>sshd</span>
 konfiguraatio oli onnistunut.</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><o:p>&nbsp;</o:p></p>
@@ -2010,13 +2010,13 @@ page-break-before:always'>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Lähteet</p>
+<p class=MsoNormal style='margin-left:36.0pt'>LÃ¤hteet</p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Karvinen. T. 2018. Luettavissa: <a
 href="https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh">https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh</a>.
 Luettu 19.4.2025.</p>
 
-<p class=MsoNormal style='margin-left:36.0pt'>Ristimäki, L. 2025. Luettavissa: <a
+<p class=MsoNormal style='margin-left:36.0pt'>RistimÃ¤ki, L. 2025. Luettavissa: <a
 href="https://liisaemilia.github.io/PalvelintenHallinta/Palvelinten%20hallinta%20soitto%20kotiin.htm">https://liisaemilia.github.io/PalvelintenHallinta/Palvelinten%20hallinta%20soitto%20kotiin.htm</a>.
 Luettu 19.4.2025.<o:p></o:p></p>
 
