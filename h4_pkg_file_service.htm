@@ -1780,9 +1780,9 @@ ohjelma apache2:n ja muiden web-palvelinten testaamiseen.</p>
 src="h4_pkg_file_service_tiedostot/image008.png" v:shapes="Kuva_x0020_4"><![endif]></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'>Tämän jälkeen muokkasin apache2:n
-testisivua seuraavalla komennolla ´<span class=SpellE>echo</span> <span
+testisivua seuraavalla komennolla ´<span class=SpellE>echo</span> "<span
 class=SpellE>Heeyy</span>! <span lang=EN-GB style='mso-ansi-language:EN-GB'>Apache
-up &amp; running! </span>| <span class=SpellE>sudo</span> tee /<span
+up &amp; running!" </span>| <span class=SpellE>sudo</span> tee /<span
 class=SpellE>var</span>/www/html/index.html´. Tämän jälkeen <span class=SpellE><span
 class=GramE>testasin,että</span></span> sivu palauttaa muokkaamani tekstin
 komennolla ´<span class=SpellE>curl</span> <span class=SpellE>localhost</span>
@@ -1804,8 +1804,8 @@ jonka alle apache2 asennuksen tiedostot tulevat. Apache2:n <span class=SpellE>in
 tiedoston tein komennolla ´<span class=SpellE>sudo</span> vi /<span
 class=SpellE>srv</span>/<span class=SpellE>salt</span>/apache2/<span
 class=SpellE>init.sls</span>´, ja index.html tiedoston komennolla ´<span
-class=SpellE>echo</span> <span class=SpellE>Jippikayee</span>! <span
-lang=EN-GB style='mso-ansi-language:EN-GB'>Apache2 running on salt slave! | <span
+class=SpellE>echo</span> "<span class=SpellE>Jippikayee</span>! <span
+lang=EN-GB style='mso-ansi-language:EN-GB'>Apache2 running on salt slave!" | <span
 class=SpellE>sudo</span> tee /<span class=SpellE>srv</span>/salt/apache2/index.html´.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-GB
